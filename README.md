@@ -19,6 +19,7 @@ To add a new profile to the configuraion you have to get a new instance of Profi
 Profile profile = launcherConfig.createProfile();
 profile.setName(profileName);
 profile.setLastVersionID(versionName);
+profile.setIdentifier(UUIDTypeAdapter.fromUUID(UUID.randomUUID()));
 ```
 profileName is the name of the profile which will be displayed in the dropdown menu of the launcher. The versionName is the name of the minecraft version which will be started (the folder names in *.minecraft/versions/*).
 
